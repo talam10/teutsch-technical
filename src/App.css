@@ -1,0 +1,85 @@
+html {
+  scroll-behavior: smooth;
+
+  --base-color-rgb: 217, 217, 217;
+  --base-color: rgb(var(--base-color-rgb));
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.calculator-body {
+  background-color: rgb(16, 8, 8);
+  border: 1px solid var(--base-color);
+  border-radius: clamp(10px, 4vw, 20px);
+  box-shadow: 0 0 10px 1px rgba(var(--base-color-rgb), 0.5);
+  padding: clamp(15px, 5vw, 25px);
+  max-width: 500px;
+}
+
+.calculator-body > div {
+  display: flex;
+}
+
+#calculator-input {
+  background-color: rgb(200, 200, 195);
+  border: none;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: inset 0 0 10px 1px rgba(var(--base-color-rgb), 0.25);
+  border: 1px solid rgba(var(--base-color-rgb), 0.4);
+  margin-bottom: 20px;
+  width: 220px;
+}
+
+.calculator-button {
+  flex: 1;
+  background-color: rgb(200, 200, 195);
+}
+
+.calc-logo {
+margin-block-start: 0%;
+margin-bottom: 20px;
+margin-right: 20px;
+height: 50px;
+width: 50px;
+display: block;
+}
+
+.calcHeading {
+  color: orange;
+  padding: 10px;
+  font-weight: 600;
+}
+
+.operator {
+  height: 40px;
+  width: 40px;
+  background-color: orange;
+  flex: 1;
+}
+
+.c-ac-equals {
+  height: 40px;
+  flex: 1;
+}
+
+.equals {
+  background-color: rgb(82, 197, 82);
+  flex: 1;
+}
+
+.c-button {
+  flex: 1;
+  background-color: blanchedalmond;
+}
+
+.ac-button {
+  flex: 1;
+  background-color: rgb(185, 171, 153);
+}
